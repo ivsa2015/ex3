@@ -7,14 +7,12 @@ public class ReadSymbol {
     public static void main(String[] args) throws java.io.IOException {
         char f = 0, ignore = 0;
         int sum=0;
+        System.out.println("Для выхода введите '.'\n");
         do {
             f = (char) System.in.read();
             System.out.println(f);
-            if (f==' ') sum += 1;
-            do {
-                ignore = (char) System.in.read();
-            } while (ignore != '\n');
+            if (f==' ') sum++;
         } while (f != '.');
-        System.out.println(sum);
+        System.out.printf("\n%s: \t %d", "Количество введенных пробелов", sum);
     }
 }
