@@ -15,7 +15,7 @@ public class Case {
             if (f>'A'&&f<'Z') {
                 f +=32;
                 sum++;
-                System.out.printlnd(f);
+                System.out.println(f);
             } else if (f>97&&f<122){
                 f -=32;
                 sum++;
