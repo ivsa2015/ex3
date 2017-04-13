@@ -5,18 +5,16 @@ package ex3.BubbleSort;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] s={4,54,324,76,3,657,33,88,-4,89};
+        String[] s = {"dsfgfds", "asdfrrvrf", "sdfsdfsdf", "trsytukjs", "serffewewa", "esryrejds", "sarefre", "sergsehs", "saerfa", "strhrsresa"};
         BubbleSort bs = new BubbleSort();
         System.out.println("\nНеотсортированный массив: ");
-        for (int i:s) {
+        for (String i : s) {
             System.out.println(i);
         }
         bs.sort(s);
         System.out.println("\nОтсортированный массив: ");
-        for (int h:s
-             ) {
+        for (String h : s) {
             System.out.println(h);
         }
     }
-
 }
